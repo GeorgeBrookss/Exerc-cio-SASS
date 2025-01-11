@@ -1,0 +1,27 @@
+@use 'cores.scss';
+@use 'reset.scss';
+
+
+@mixin displays{
+    display: flex;
+};
+
+
+body{
+
+    @include displays();
+    
+    background-color: cores.$corBody;
+    display: block;
+    .container h2{
+        display: block;
+    }
+
+} 
+
+
+
+
+
+
+

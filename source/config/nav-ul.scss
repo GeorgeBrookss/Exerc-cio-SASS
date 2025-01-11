@@ -1,0 +1,35 @@
+@use 'cores.scss';
+
+@mixin displayhead{
+    background-color: cores.$corPrincipal;
+    margin: 18px;
+}
+
+
+
+@mixin txt-styles{
+    text-decoration: none;
+    color: cores.$corFonte;
+
+};
+
+
+
+nav ul{
+    list-style: none;
+    @include displayhead();
+    display: flex;
+    padding-top: 40px;
+
+    a{
+        @include txt-styles();
+        
+
+
+    }
+}
+
+.product-button{
+    @include txt-styles();
+
+}

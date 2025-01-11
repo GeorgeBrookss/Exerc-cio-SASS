@@ -1,0 +1,68 @@
+@use 'cores.scss';
+
+
+@mixin displaysprod{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    text-align: center;
+    gap: 1px;
+    
+};
+
+@mixin produto-item{
+    padding-left: 18px;
+    list-style: none;
+    padding-top: 20px;
+
+    .produto-item img{
+        width: 2px;
+    }
+
+};
+
+@mixin buttons{
+    border: 1px solid cores.$corFonte;
+    &:hover{
+        border: 2px solid cores.$corHover;
+        cursor: pointer
+    }
+}
+
+.products{
+    @include displaysprod();
+
+
+    li{
+        @include produto-item();
+    }
+
+    li img{
+        max-width: 18em;
+    }
+    
+    a{
+        @include buttons();
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 344px) and (max-width: 819px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        justify-content: center;
+    grid-template-columns: repeat(1, 60%);
+    
+    
+        
+    }
+}

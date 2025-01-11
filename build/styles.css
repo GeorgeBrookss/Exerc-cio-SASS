@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+* .container {
+  width: 1124px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 820px) {
+  .container {
+    width: 820px;
+  }
+}
+header {
+  background-color: red;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+header img {
+  max-width: 15em;
+}
+header h1 {
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  background-color: red;
+  margin: 18px;
+  display: flex;
+  padding-top: 40px;
+}
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.product-button {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  background-color: #412e27;
+  display: block;
+}
+body .container h2 {
+  display: block;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  text-align: center;
+  gap: 1px;
+}
+.products li {
+  padding-left: 18px;
+  list-style: none;
+  padding-top: 20px;
+}
+.products li .produto-item img {
+  width: 2px;
+}
+.products li img {
+  max-width: 18em;
+}
+.products a {
+  border: 1px solid #fff;
+}
+.products a:hover {
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 344px) and (max-width: 819px) {
+  .container {
+    max-width: 80%;
+  }
+  .products {
+    justify-content: center;
+    grid-template-columns: repeat(1, 60%);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,42 @@
+@use 'cores.scss';
+@use 'reset.scss';
+
+
+@mixin displayhead{
+    background-color: cores.$corPrincipal;
+
+
+
+};
+
+
+
+@mixin displays{
+    display: flex;
+    align-items: center;
+    max-width: 1866px;
+    width: 100%; 
+    
+};
+
+
+
+header{
+    @include displayhead();
+    
+    .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    }
+
+    img{
+        max-width: 15em;
+    
+
+    }
+    h1{
+        color: cores.$corFonte;
+    }
+}
